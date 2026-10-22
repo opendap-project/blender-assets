@@ -13,6 +13,10 @@ OpenDAP's own Blender asset library: materials, models and scene setups (lightin
 
 OpenDAP repositories add this library as a git submodule, pinned to a tag, at `lib/opendap` inside their renders folder (for example `renders/lib/opendap`), and **link** assets from it so that a change here propagates to every render.
 
+## Rendering rules
+
+Every render made with this library follows the OpenDAP design language: matte graphite polymer by default, soft studio light, orange only on the Action button and used sparingly elsewhere, plasma effects only in display content or an explicit concept visualisation, and accurate proportions of the real parts. The rules are in the [case industrial-design spec](https://github.com/opendap-project/case/blob/main/docs/specs/industrial-design.md) (§ Rendering rules) and the [design system spec](https://github.com/opendap-project/ui-components/blob/main/docs/specs/design-system.md); materials in `opendap/` implement them.
+
 ## License
 
 This repository follows the [REUSE](https://reuse.software) layout: license texts live in `LICENSES/` and `REUSE.toml` maps each path to its license.
